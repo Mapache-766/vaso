@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecaneth</title>
+    <link rel="stylesheet" href="segundo.css">
+</head>
+<body style="background-image: url(/IMG/fondo\ 1.png); background-size: cover;">
+    <div class="container">
+        <h1>ZType Advanced - Modo Individual</h1>
+        
+        <div id="start-screen">
+            <p>Escribe las palabras que caen antes de que lleguen al fondo!</p>
+            <button id="start-button">Iniciar Juego</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div class="stats">
+                <div>Nivel: <span id="level">1</span></div>
+                <div>Puntuación: <span id="score">0</span></div>
+                <div class="lives" id="lives"></div>
+            </div>
+            <div class="game-area" id="game-area"></div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <input type="text" id="input" placeholder="Escribe aquí...">
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2>Game Over</h2>
+            <p>Puntuación final: <span id="final-score"></span></p>
+            <button id="restart-button">Jugar de nuevo</button>
+        </div>
+
+        <button id="mute-button">🔊</button>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
